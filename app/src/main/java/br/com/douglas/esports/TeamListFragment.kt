@@ -56,5 +56,4 @@ class TeamListFragment : Fragment() {
             }
         })
     }
-
 }

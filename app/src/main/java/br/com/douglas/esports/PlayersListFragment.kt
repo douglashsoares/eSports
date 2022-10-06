@@ -25,7 +25,7 @@ class PlayersListFragment : Fragment() {
        findNavController().navigate(PlayersListFragmentDirections.gotoPlayerEditBottomSheet(player))
     }
 
-    val deleteCallBack: (String) -> Unit =  {
+    private val deleteCallBack: (String) -> Unit =  {
         deletePlayer(it)
     }
     override fun onCreateView(

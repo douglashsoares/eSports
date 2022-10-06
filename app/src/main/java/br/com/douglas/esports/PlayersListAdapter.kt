@@ -22,6 +22,7 @@ class PlayersListAdapter(
 
         fun bind(player: Player, editCallBack: (Player) -> Unit, deleteCallback: (String) -> Unit){
             binding.txtPlayer.text = player.name
+            binding.txtTeam.text = player.team?.name
 
             binding.btnUpdatePlayer.setOnClickListener {
                 editCallBack(player)

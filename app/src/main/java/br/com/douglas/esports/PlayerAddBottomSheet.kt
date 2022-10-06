@@ -50,11 +50,11 @@ class PlayerAddBottomSheet : BottomSheetDialogFragment() {
 
     private fun setupSpinner() {
 
-        binding.spJogador.adapter = spinnerAdapter
+        binding.spAddPlayer.adapter = spinnerAdapter
 
         spinnerAdapter.add("Sem Time")
 
-        binding.spJogador.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spAddPlayer.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>,
                 view: View?,
@@ -76,7 +76,7 @@ class PlayerAddBottomSheet : BottomSheetDialogFragment() {
         }
     }
 
-    fun getTeams() {
+    private fun getTeams() {
         val retrofitClient = NetworkUtils
             .getRetrofitInstance()
 
