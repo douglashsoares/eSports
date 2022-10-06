@@ -17,6 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spJogador"
+        android:layout_width="0dp"
+        android:layout_margin="16dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPlayer"
+
+        />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddPlayer"
         android:layout_width="0dp"
@@ -27,7 +38,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         app:backgroundTint="@color/design_default_color_primary"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/edtPlayer"
+        app:layout_constraintTop_toBottomOf="@id/spJogador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

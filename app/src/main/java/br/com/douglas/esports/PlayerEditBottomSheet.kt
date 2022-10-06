@@ -15,7 +15,7 @@ import retrofit2.Response
 class PlayerEditBottomSheet : BottomSheetDialogFragment() {
 
     private lateinit var binding: PlayerEditBottomSheetBinding
-    val args: PlayerEditBottomSheetArgs by navArgs()
+    private val args: PlayerEditBottomSheetArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,

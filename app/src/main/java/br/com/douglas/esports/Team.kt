@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Team(
-    val id: String,
+    val id: Int,
     val name: String,
     val players: List<Player> = listOf()
 ):Parcelable

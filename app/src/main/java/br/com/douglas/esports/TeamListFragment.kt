@@ -42,7 +42,7 @@ class TeamListFragment : Fragment() {
             .getRetrofitInstance()
 
         val endpoint = retrofitClient.create(TeamEndpoint::class.java)
-        val callback = endpoint.getTeam()
+        val callback = endpoint.getTeams()
 
         callback.enqueue(object : Callback<List<Team>> {
 
@@ -51,8 +51,8 @@ class TeamListFragment : Fragment() {
             }
 
             override fun onResponse(call: Call<List<Team>>, response: Response<List<Team>>) {
-                val playerList = response.body()
-                adapter.submitList(playerList)
+                val teamList = response.body()
+                adapter.submitList(teamList)
             }
         })
     }
